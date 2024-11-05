@@ -10,7 +10,7 @@ Title: Jedi Star Fighter
 import { useGLTF, Float } from "@react-three/drei";
 
 export function Jsf(props) {
-	const { nodes, materials } = useGLTF("jsf.gltf");
+	const { nodes, materials } = useGLTF("/jsf.gltf");
 	return (
 		<Float
 			speed={2.5}
@@ -53,5 +53,5 @@ export function Jsf(props) {
 	);
 }
 
-useGLTF.preload("jsf.gltf");
+useGLTF.preload("/jsf.gltf");
 export default Jsf;
