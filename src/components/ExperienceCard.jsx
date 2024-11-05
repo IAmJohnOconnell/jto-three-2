@@ -6,7 +6,6 @@ const StyledExperienceCard = styled.div`
 	padding: 5%;
 	max-height: 195px;
 	background-color: #3d3e41;
-	gap: 12px;
 
 	img {
 		max-width: 150px;

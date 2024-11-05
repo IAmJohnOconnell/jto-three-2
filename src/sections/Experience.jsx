@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import ExperienceCard from "../components/ExperienceCard/ExperienceCard";
+import ExperienceCard from "../components/ExperienceCard";
 
 const StyledExperience = styled.div`
 	display: flex;
 	font-family: "Roboto";
 	flex-direction: column;
-	padding-inline: 5%;
+	margin-block: 5%;
 
 	h3 {
 		font-family: "Roboto Serif";
@@ -13,17 +13,24 @@ const StyledExperience = styled.div`
 		font-weight: 500;
 		text-align: center;
 		margin-bottom: 2%;
+
+		@media (max-width: 786px) {
+			font-size: 40px;
+		}
 	}
 
 	.flexContainer {
 		display: flex;
-		gap: 12px;
-		// justify-content: space-between;
+		gap: 40px;
 		flex-wrap: wrap;
+		justify-content: center;
 
-		@media (max-width: 760px) {
-			justify-content: center;
-			gap: 4px;
+		@media (max-width: 499px) {
+			gap: 12px;
+		}
+
+		@media (min-width: 1200px) {
+			justify-content: space-between;
 		}
 	}
 `;
@@ -37,6 +44,7 @@ function Experience() {
 				<ExperienceCard icon={"MeevoLogo.svg"} />
 				<ExperienceCard icon={"EOneLogo.png"} />
 				<ExperienceCard icon={"Think.png"} />
+				<ExperienceCard icon={"verizon.svg"} />
 			</div>
 		</StyledExperience>
 	);

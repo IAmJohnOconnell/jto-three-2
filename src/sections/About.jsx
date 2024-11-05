@@ -4,7 +4,6 @@ const StyledAbout = styled.div`
 	font-family: "Roboto";
 	display: flex;
 	flex-direction: column;
-	margin-block: 5%;
 	padding-inline: 5%;
 
 	h3 {
@@ -16,6 +15,7 @@ const StyledAbout = styled.div`
 
 		@media (max-width: 786px) {
 			padding-left: unset;
+			font-size: 40px;
 		}
 	}
 
@@ -25,13 +25,13 @@ const StyledAbout = styled.div`
 		content: "";
 		border-bottom: 2px solid #ffc86b;
 		width: 80px;
-		transform: translateY(48px);
+		transform: translateY(58px);
 	}
 
 	p {
 		max-width: 65ch;
 		margin: 5% auto;
-		font-size: 18px;
+		font-size: 20px;
 	}
 `;
 
@@ -43,7 +43,7 @@ const About = () => {
 				<p>
 					Throughout my 7 years in web and application development, I
 					have had the privilege of working with innovative products
-					like Meevo and E-One, where I evolved my skills in web
+					like Meevo and E-ONE, where I evolved my skills in web
 					development and UX/UI design. I’m a creative problem solver
 					who thrives on collaboration and leading teams to achieve
 					results. As I look for new opportunities, I am eager to

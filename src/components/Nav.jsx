@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.div`
-	display: flex;
-	justify-content: center;
 	font-family: "Roboto";
 	font-weight: 500;
 	margin-block: 1rem;
+	margin-inline: 5%;
 
 	ul {
 		display: flex;
@@ -13,6 +12,7 @@ const StyledNavbar = styled.div`
 		width: 100%;
 		padding: 0px;
 		align-items: center;
+		justify-content: space-between;
 	}
 
 	a {
@@ -32,13 +32,15 @@ const StyledNavbar = styled.div`
 const Logo = styled.li`
 	color: #fff;
 	font-family: "Homemade Apple", cursive;
-	// padding-left: 40px;
 `;
 
 const NavLinks = styled.div`
-	margin: 0 auto;
 	display: flex;
 	gap: 3rem;
+
+	@media (max-width: 786px) {
+		gap: 1rem;
+	}
 `;
 
 const Navbar = () => {
@@ -49,9 +51,6 @@ const Navbar = () => {
 					<span>{`< Jto / >`}</span>
 				</Logo>
 				<NavLinks>
-					<li>
-						<a href='#home'>Home</a>
-					</li>
 					<li>
 						<a href='#about'>About</a>
 					</li>

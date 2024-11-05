@@ -4,9 +4,8 @@ const StyledSkillCard = styled.div`
 	font-family: "Roboto";
 	flex-direction: row;
 	align-items: center;
-	padding: 5px 10px;
+	padding: 1% 2%;
 	background-color: #3d3e41;
-	border-radius: 10px;
 	gap: 8px;
 
 	p {

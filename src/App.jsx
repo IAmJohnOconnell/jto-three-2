@@ -2,8 +2,8 @@ import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
 import styled from "styled-components";
 import "./App.css";
-import Navbar from "./components/Nav/Nav";
-import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Nav";
+import Hero from "./components/Hero";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Experience from "./sections/Experience";
@@ -17,8 +17,6 @@ const StyledApp = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// border-left: 1px solid #ffc86b;
-	// border-right: 1px solid #ffc86b;
 `;
 
 function App() {

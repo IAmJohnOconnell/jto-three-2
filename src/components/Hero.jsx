@@ -7,24 +7,34 @@ const StyledHero = styled.div`
 		display: flex;
 		flex-direction: column;
 		max-width: fit-content;
-		// width: 100%;
-		margin: 8% auto;
 		position: absolute;
 		z-index: 1;
-		padding-inline: 5%;
+		padding-left: 5%;
+		padding-top: 2%;
+		text-shadow: 0px 0px 4px #2d2d2d;
+
+		@media (max-width: 499px) {
+			position: relative;
+			text-shadow: none;
+			margin-block: 1rem;
+		}
 	}
 
 	h1,
 	h2 {
-		font-weight: 400;
-		font-size: 32px;
+		font-weight: 700;
+		font-size: 44px;
+		line-height: initial;
+
+		@media (max-width: 499px) {
+			font-size: 8vw;
+		}
 	}
 
 	span {
-		font-family: "Homemade Apple";
+		font-family: "Roboto Serif";
 		color: #ffc86b;
 		margin-left: 8px;
-		font-size: 40px;
 	}
 `;
 
@@ -33,10 +43,10 @@ const Hero = () => {
 		<StyledHero>
 			<div className='heroContainer'>
 				<h1>
-					I'm <span>John O'Connell</span>
+					I'm<span>John O'Connell</span>
 				</h1>
 				<h2>
-					Web Developer and User Experience <br /> Consultant
+					Web Developer <br />& Consultant
 				</h2>
 			</div>
 		</StyledHero>

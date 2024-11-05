@@ -5,13 +5,12 @@ const StyledContact = styled.div`
 		background-color: #3d3e41;
 		border-bottom: 2px solid #ffc86b;
 		border-top: 2px solid #ffc86b;
-		min-height: 150px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 12px;
-		margin-top: 6%;
+		margin-block: 5%;
+		padding: 2%;
 	}
 
 	h3 {
@@ -19,27 +18,46 @@ const StyledContact = styled.div`
 		font-size: 48px;
 		font-weight: 500;
 		text-align: center;
+
+		@media (max-width: 786px) {
+			font-size: 40px;
+		}
 	}
 
 	.thanks {
 		color: #ffc86b;
 		font-size: 40px;
 		text-align: center;
-		padding: 3%;
+		margin-block: 5%;
+
+		@media (max-width: 786px) {
+			font-size: 32px;
+			margin-block: 5%;
+		}
 	}
 
 	.card {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		background-color: #34383a;
-		padding: 10px 40px;
+		padding: 15px 40px;
 		color: #ffc86b;
+		font-size: 20px;
+	}
+
+	.card:hover {
+		color: white;
 	}
 
 	.cards {
 		display: flex;
 		gap: 12px;
 		padding-block: 2%;
+
+		@media (max-width: 499px) {
+			flex-direction: column;
+		}
 	}
 `;
 
@@ -50,7 +68,7 @@ const Contact = () => {
 				<h3>Contact Me</h3>
 				<div className='cards'>
 					<div className='card'>
-						<p>Email</p>
+						<p>johnathano619@gmail.com</p>
 					</div>
 					<div className='card'>
 						<p>Florida, United States</p>
@@ -58,7 +76,7 @@ const Contact = () => {
 				</div>
 			</div>
 			<div>
-				<p className='thanks'>"Thanks for Scrolling"</p>
+				<p className='thanks'>Thanks for Scrolling!</p>
 			</div>
 		</StyledContact>
 	);

@@ -13,10 +13,10 @@ export function Jsf(props) {
 	const { nodes, materials } = useGLTF("/jsf.gltf");
 	return (
 		<Float
-			speed={2.5} // Animation speed, defaults to 1
-			rotationIntensity={0.3} // XYZ rotation intensity, defaults to 1
-			floatIntensity={5} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-			floatingRange={[1, 10]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+			speed={2.5}
+			rotationIntensity={0.3}
+			floatIntensity={5}
+			floatingRange={[1, 10]}
 		>
 			<group
 				{...props}
