@@ -294,12 +294,12 @@ function Timeline() {
 					<p className='company hidden'>Verizon</p>
 					<p className='jobLoc hidden'>Florida, USA</p>
 					<p className='jobDesc hidden'>
-						"I conducted user research and usability testing to
+						I conducted user research and usability testing to
 						gather insights and create clear, educational
 						documentation for clients, enhancing their understanding
 						of technical processes. By applying these findings to
 						the development process, I streamlined user flows and
-						optimized online and in-store shopping experiences."
+						optimized online and in-store shopping experiences.
 					</p>
 				</div>
 			</div>
