@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router";
 
 const StyledNavbar = styled.div`
 	font-family: "Roboto";
@@ -57,6 +58,9 @@ const Navbar = () => {
 					<li>
 						<a href='#work'>My Work</a>
 					</li>
+					{/* <li>
+						<NavLink to='/otherStuff'>Other Stuff</NavLink>
+					</li> */}
 					<li>
 						<a href='#contact'>Contact</a>
 					</li>

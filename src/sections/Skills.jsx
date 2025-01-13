@@ -56,7 +56,7 @@ const Skills = () => {
 			<div className='gridContainer'>
 				<div className='flex'>
 					<SkillCard
-						name={"Javascript"}
+						name={"JavaScript"}
 						icon={"JavaScript.svg"}
 					/>
 					<SkillCard
@@ -68,7 +68,7 @@ const Skills = () => {
 						icon={"Css.svg"}
 					/>
 					<SkillCard
-						name={"Git Sorce Control"}
+						name={"Git Source Control"}
 						icon={"Git.svg"}
 					/>
 				</div>
@@ -100,7 +100,7 @@ const Skills = () => {
 						icon={"Gatsby.svg"}
 					/>
 					<SkillCard
-						name={"SASS"}
+						name={"Sass"}
 						icon={"Sass.svg"}
 					/>
 				</div>
