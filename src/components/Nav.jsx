@@ -43,6 +43,12 @@ const NavLinks = styled.div`
   display: flex;
   gap: 3rem;
 
+  .mobileHidden {
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
   @media (max-width: 786px) {
     gap: 1rem;
   }
@@ -73,7 +79,7 @@ const Navbar = () => {
         </Logo>
         <NavLinks>
           <li>
-            <NavLink to="/" href="#home">
+            <NavLink className="mobileHidden" to="/" href="#home">
               Home
             </NavLink>
           </li>
