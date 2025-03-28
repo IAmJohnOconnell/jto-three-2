@@ -12,7 +12,7 @@ const StyledPortfolio = styled.div`
   font-family: "Roboto";
 
   .container {
-    padding-left: 5%;
+    padding-inline: 5%;
   }
 
   h3 {
