@@ -1,6 +1,12 @@
 import React from "react";
 import Navbar from "../components/Nav";
 import styled from "styled-components";
+import PortfolioCard from "../components/PortfolioCard";
+import f1HubThumb from "../assets/portfolioImages/f1HubThumb.png";
+import eOneThumb from "../assets/portfolioImages/eOneThumb.png";
+import meevoThumb from "../assets/portfolioImages/meevoThumb.png";
+import pokedexThumb from "../assets/portfolioImages/pokedexThumb.png";
+import flwpThumb from "../assets/portfolioImages/flwpThumb.png";
 
 const StyledPortfolio = styled.div`
   max-width: 1200px;
@@ -52,9 +58,29 @@ const StyledPortfolio = styled.div`
     font-size: 20px;
   }
 
+  .dribbleCTA {
+    font-style: italic;
+  }
+
   .link,
   .link:visited {
     color: #ffc86b;
+  }
+
+  .portfolioCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 786px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
   }
 `;
 
@@ -65,7 +91,29 @@ const Portfolio = () => {
       <div className="container">
         <div>
           <h3>The Gallery</h3>
-          <p>
+          <div className="portfolioCards">
+            <PortfolioCard
+              title={"Formula 1 Hub"}
+              icon={f1HubThumb}
+              url={"https://formula1hub.netlify.app/"}
+            />
+            <PortfolioCard
+              title={"Meevo"}
+              icon={meevoThumb}
+              url={"https://www.meevo.com/"}
+            />
+            <PortfolioCard
+              title={"E-One"}
+              icon={eOneThumb}
+              url={"https://e-one.com/vector/"}
+            />
+            <PortfolioCard
+              title={"Pokedex"}
+              icon={pokedexThumb}
+              url={"https://pokedexv2-iamjoconnell.netlify.app/"}
+            />
+          </div>
+          <p className="dribbleCTA">
             Check out my work on{" "}
             <a className="link" href="https://dribbble.com/johnathano619">
               Dribble
@@ -75,14 +123,15 @@ const Portfolio = () => {
         </div>
         <div>
           <h3>Case Studies</h3>
-          <p className="projectTitle">
-            <a
-              className="link"
-              href="https://www.figma.com/proto/rBBvw7ghNixZtTZ2VZhbnV/ServiceStream?node-id=390-3599&t=o9PgFbLIWoqJjxXu-1&scaling=min-zoom&content-scaling=fixed"
-            >
-              Florida Water Professionals
-            </a>
-          </p>
+          <div className="portfolioCards">
+            <PortfolioCard
+              title={"Florida Water Professionals"}
+              icon={flwpThumb}
+              url={
+                "https://www.figma.com/proto/rBBvw7ghNixZtTZ2VZhbnV/ServiceStream?node-id=390-3599&t=o9PgFbLIWoqJjxXu-1&scaling=min-zoom&content-scaling=fixed"
+              }
+            />
+          </div>
         </div>
       </div>
     </StyledPortfolio>
