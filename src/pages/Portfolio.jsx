@@ -66,7 +66,7 @@ const Portfolio = () => {
         <div>
           <h3>The Gallery</h3>
           <p>
-            Check some of my other work on{" "}
+            Check out my work on{" "}
             <a className="link" href="https://dribbble.com/johnathano619">
               Dribble
             </a>
