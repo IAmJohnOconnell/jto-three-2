@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const StyledNavbar = styled.div`
   font-family: "Roboto";
@@ -48,6 +49,22 @@ const NavLinks = styled.div`
 `;
 
 const Navbar = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavigation = (e, id) => {
+    e.preventDefault();
+
+    if (location.pathname === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate(`/?section=${id}`);
+    }
+  };
+
   return (
     <StyledNavbar>
       <ul>
@@ -61,16 +78,22 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/#about">About</NavLink>
+            <a href="#about" onClick={(e) => handleNavigation(e, "about")}>
+              About
+            </a>
           </li>
           <li>
-            <NavLink to="/#work">My Work</NavLink>
+            <a href="#work" onClick={(e) => handleNavigation(e, "work")}>
+              My Work
+            </a>
           </li>
           <li>
             <NavLink to="/portfolio">Portfolio</NavLink>
           </li>
           <li>
-            <NavLink to="/#contact">Contact</NavLink>
+            <a href="#contact" onClick={(e) => handleNavigation(e, "contact")}>
+              Contact
+            </a>
           </li>
         </NavLinks>
       </ul>

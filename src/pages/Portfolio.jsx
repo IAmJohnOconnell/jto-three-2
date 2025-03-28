@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Nav";
 import styled from "styled-components";
 
-const StyledOtherStuff = styled.div`
+const StyledPortfolio = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -58,9 +58,9 @@ const StyledOtherStuff = styled.div`
   }
 `;
 
-const OtherStuff = () => {
+const Portfolio = () => {
   return (
-    <StyledOtherStuff>
+    <StyledPortfolio>
       <Navbar />
       <div className="container">
         <div>
@@ -85,8 +85,8 @@ const OtherStuff = () => {
           </p>
         </div>
       </div>
-    </StyledOtherStuff>
+    </StyledPortfolio>
   );
 };
 
-export default OtherStuff;
+export default Portfolio;
