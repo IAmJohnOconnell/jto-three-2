@@ -6,9 +6,12 @@ const StyledNavbar = styled.div`
   font-family: "Roboto";
   font-weight: 500;
   margin-block: 1rem;
+  width: 100%;
+  padding: 0 5%;
 
   @media (max-width: 768px) {
     margin-inline: 5%;
+    margin-inline: 0;
   }
 
   ul {

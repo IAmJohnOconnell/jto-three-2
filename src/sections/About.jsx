@@ -34,6 +34,12 @@ const StyledAbout = styled.div`
     margin-inline: auto;
     margin-bottom: 2%;
     font-size: 20px;
+
+    @media (max-width: 786px) {
+      font-size: 18px;
+      width: 100%;
+      padding: 0;
+    }
   }
 `;
 
