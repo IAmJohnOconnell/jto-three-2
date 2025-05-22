@@ -88,6 +88,11 @@ const Portfolio = () => {
           <h3>The Gallery</h3>
           <div className="portfolioCards">
             <PortfolioCard
+              title={"My Recent Reading"}
+              icon={"myrecentreadingThumb.png"}
+              url={"https://myrecentreading.netlify.app/"}
+            />
+            <PortfolioCard
               title={"Formula 1 Hub"}
               icon={"f1hubThumb.png"}
               url={"https://formula1hub.netlify.app/"}

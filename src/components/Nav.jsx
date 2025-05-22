@@ -30,13 +30,17 @@ const StyledNavbar = styled.div`
   }
 
   a:hover {
-    color: #c9cdcf;
+    color: #ffc86b;
   }
 `;
 
 const Logo = styled.li`
   color: #fff;
   font-family: "Homemade Apple", cursive;
+
+  :hover {
+    color: #ffc86b;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -88,11 +92,11 @@ const Navbar = () => {
               About
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#work" onClick={(e) => handleNavigation(e, "work")}>
               My Work
             </a>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/portfolio">Portfolio</NavLink>
           </li>
