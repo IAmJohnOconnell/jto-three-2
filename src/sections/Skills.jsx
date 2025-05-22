@@ -32,10 +32,15 @@ const StyledSkills = styled.div`
 
   .flex {
     display: flex;
+    flex-wrap: wrap;
     flex-basis: 50%;
-    grid-gap: 12px;
+    gap: 1rem;
     margin-bottom: 12px;
     justify-content: center;
+
+    @media (max-width: 375px) {
+      gap: 8px;
+    }
   }
 
   svg {
@@ -59,24 +64,24 @@ const Skills = () => {
           <SkillCard name={"CSS"} icon={"Css.svg"} />
           <SkillCard name={"JavaScript"} icon={"JavaScript.svg"} />
           <SkillCard name={"TypeScript"} icon={"TypeScript.svg"} />
-          <SkillCard name={"NodeJS"} icon={"nodejs.svg"} />
-        </div>
-        <div className="flex">
           <SkillCard name={"React"} icon={"React.svg"} />
+          {/* </div> */}
+          {/* <div className="flex"> */}
           <SkillCard name={"Angular"} icon={"Angular.svg"} />
+          <SkillCard name={"NodeJS"} icon={"nodejs.svg"} />
           <SkillCard name={"MongoDB"} icon={"Mongo.svg"} />
           <SkillCard name={"PostgreSQL"} icon={"postgresql.svg"} />
-        </div>
-        <div className="flex">
+          {/* </div> */}
+          {/* <div className="flex"> */}
           <SkillCard name={"Sass"} icon={"Sass.svg"} />
           <SkillCard name={"Gatsby"} icon={"Gatsby.svg"} />
           <SkillCard name={"GraphQL"} icon={"GraphQL.svg"} />
-        </div>
-        <div className="flex">
-          <SkillCard name={"Git Source Control"} icon={"Git.svg"} />
+          {/* </div> */}
+          {/* <div className="flex"> */}
+          <SkillCard name={"Git"} icon={"Git.svg"} />
           <SkillCard name={"RxJS"} icon={"Rxjs.svg"} />
-        </div>
-        <div className="flex">
+          {/* </div> */}
+          {/* <div className="flex"> */}
           <SkillCard name={"Figma"} icon={"Figma.svg"} />
         </div>
         <svg
