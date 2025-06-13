@@ -46,6 +46,7 @@ function Experience() {
     <StyledExperience id="work">
       <h3>Brands I've Worked With</h3>
       <div className="flexContainer">
+        <ExperienceCard icon={"CromLogo.png"} />
         <ExperienceCard icon={"FLWPLogo.png"} />
         <ExperienceCard icon={"MeevoLogo.svg"} />
         <ExperienceCard icon={"EOneLogo.png"} />

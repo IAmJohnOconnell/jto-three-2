@@ -3,8 +3,9 @@ import styled from "styled-components";
 const StyledExperienceCard = styled.div`
   display: flex;
   font-family: "Roboto";
-  padding: 5%;
-  height: 195px;
+  padding: 5% 2%;
+  height: 185px;
+  width: 200px;
   background-color: #3d3e41;
 
   @media (max-width: 768px) {
