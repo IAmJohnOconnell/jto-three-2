@@ -45,6 +45,10 @@ const StyledRecentProjects = styled.div`
   p {
     max-width: 65ch;
     font-size: 20px;
+
+    @media (max-width: 786px) {
+      font-size: 18px;
+    }
   }
 
   .dribbleCTA {
