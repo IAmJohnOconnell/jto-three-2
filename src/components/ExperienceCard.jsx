@@ -10,6 +10,7 @@ const StyledExperienceCard = styled.div`
 
   @media (max-width: 768px) {
     height: 150px;
+    width: 100%;
   }
 
   @media (max-width: 425px) {

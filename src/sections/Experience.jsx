@@ -29,6 +29,7 @@ const StyledExperience = styled.div`
       flex-direction: column;
       padding-inline: 5%;
       gap: 1rem;
+      align-items: center;
     }
 
     @media (max-width: 499px) {

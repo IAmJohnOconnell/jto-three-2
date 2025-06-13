@@ -10,7 +10,7 @@ const StyledAbout = styled.div`
     font-family: "Roboto Serif";
     font-size: 48px;
     font-weight: 500;
-    padding-left: 5%;
+    // padding-left: 5%;
     max-width: fit-content;
     margin-bottom: 5%;
 
@@ -30,7 +30,7 @@ const StyledAbout = styled.div`
   }
 
   p {
-    max-width: 65ch;
+    // max-width: 65ch;
     margin-inline: auto;
     margin-bottom: 2%;
     font-size: 20px;
