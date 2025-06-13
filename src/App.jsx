@@ -12,6 +12,7 @@ import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import RecentProjects from "./sections/RecentProjects";
 
 const StyledApp = styled.div`
   max-width: 1200px;
@@ -44,6 +45,7 @@ function App() {
       </Canvas>
       <About id="about" />
       <Skills />
+      <RecentProjects id="projects" />
       <Experience id="work" />
       <Timeline />
       <Testimonial />

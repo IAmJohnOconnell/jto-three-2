@@ -81,18 +81,28 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <ul>
-        <Logo>
-          <span>{`< Jto / >`}</span>
-        </Logo>
+        <a href="#home" onClick={(e) => handleNavigation(e, "home")}>
+          <Logo>
+            <span>{`< Jto / >`}</span>
+          </Logo>
+        </a>
         <NavLinks>
-          <li>
+          {/* <li>
             <NavLink className="mobileHidden" to="/" href="#home">
               Home
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <a href="#about" onClick={(e) => handleNavigation(e, "about")}>
               About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={(e) => handleNavigation(e, "projects")}
+            >
+              Projects
             </a>
           </li>
           {/* <li>
@@ -100,9 +110,9 @@ const Navbar = () => {
               My Work
             </a>
           </li> */}
-          <li>
+          {/* <li>
             <NavLink to="/portfolio">Portfolio</NavLink>
-          </li>
+          </li> */}
           <li>
             <a href="#contact" onClick={(e) => handleNavigation(e, "contact")}>
               Contact
